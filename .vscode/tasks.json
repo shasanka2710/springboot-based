@@ -1,0 +1,37 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Project",
+			"type": "shell",
+			"command": "mvn clean compile -DskipTests",
+			"group": "build",
+			"problemMatcher": [],
+			"isBackground": false
+		},
+		{
+			"label": "Run Tests",
+			"type": "shell",
+			"command": "mvn test",
+			"group": "test",
+			"problemMatcher": [],
+			"isBackground": false
+		},
+		{
+			"label": "Run Application",
+			"type": "shell",
+			"command": "mvn spring-boot:run",
+			"group": "none",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Package",
+			"type": "shell",
+			"command": "mvn package -DskipTests",
+			"group": "build",
+			"problemMatcher": [],
+			"isBackground": false
+		}
+	]
+}
